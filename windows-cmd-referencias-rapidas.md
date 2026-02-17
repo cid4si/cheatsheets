@@ -52,8 +52,8 @@
 ## Diretórios e arquivos
 - `dir` — Lista conteúdo do diretório.  
 - `cd` / `chdir` — Muda o diretório atual.  
-  - `cd ..` — Volta um nível.  
-  - `cd \` — Vai para a raiz.  
+- `cd ..` — Volta um nível.  
+- `cd \` — Vai para a raiz.  
 - `md` / `mkdir` — Cria diretório.  
 - `rd` / `rmdir` — Remove diretório vazio.  
 - `copy` — Copia arquivos.  
