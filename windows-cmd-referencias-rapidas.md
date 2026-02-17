@@ -179,7 +179,7 @@ IF [/I] string1 op string2 comando
 
 Operadores:
 
-_ EQU – Igual
+- EQU – Igual
 
 - NEQ – Diferente
 
@@ -272,14 +272,15 @@ for /F "tokens=1,2" %%A in ('ipconfig ^| findstr /R "IPv4"') do (
 
 Logs em batch
 
-Redirecionamento básico
-- > — Sobrescreve arquivo de log.
+Redirecionamento básico:
 
-- >> — Acrescenta ao final.
+- (>) — Sobrescreve arquivo de log.
 
-- 2> — Redireciona erro.
+- (>>) — Acrescenta ao final.
 
-- 2>&1 — Junta saída normal e erros no mesmo arquivo.
+- (2>) — Redireciona erro.
+
+- (2>&1) — Junta saída normal e erros no mesmo arquivo.
 
 Exemplo simples:
 
