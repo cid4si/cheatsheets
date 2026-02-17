@@ -43,7 +43,7 @@
 
 ## Aparência
 - `title` — Define o título da janela.  
-- `color` — Altera cores do texto e fundo.  
+- `color` — Altera cores do ```bato e fundo.  
 - `mode` — Ajusta tamanho ou modo de exibição da tela (linhas, colunas).  
 - `prompt` — Define o formato do prompt de comando.  
 
@@ -127,6 +127,244 @@ goto menu
 
 :fim
 echo Fim do script.
+pause 
+```
+
+
+### CHOICE (menus)
+
+- choice /C opcoes /M "mensagem" — Cria menus interativos com escolhas.
+
+Exemplo:
+
+```bat
+@echo off
+echo Menu principal
+choice /C 123 /M "Escolha: 1=Backup, 2=Log, 3=Sair"
+
+if errorlevel 3 goto sair
+if errorlevel 2 goto log
+if errorlevel 1 goto backup
+
+:backup
+echo Executando backup...
+goto fim
+
+:log
+echo Gerando log...
+goto fim
+
+:sair
+echo Saindo...
+
+:fim
 pause
+
+``
+`## IF / ELSE (condicionais)
+
+Sintaxe básica
+
+```bat
+IF [NOT] ERRORLEVEL numero comando
+IF [NOT] string1==string2 comando
+IF [NOT] EXIST arquivo comando
+``
+
+`## Extensões com operadores
+
+```bat
+IF [/I] string1 op string2 comando
+```
+
+Operadores:
+
+_ EQU – Igual
+
+- NEQ – Diferente
+
+- LSS – Menor que
+
+- LEQ – Menor ou igual
+
+- GTR – Maior que
+
+- GEQ – Maior ou igual
+
+Exemplo com arquivo
+
+```bat
+IF EXIST dados.txt (
+    echo Arquivo encontrado.
+) ELSE (
+    echo Arquivo nao encontrado.
+)
+```
+
+Exemplo com %ERRORLEVEL%
+
+```bat
+@echo off
+ping 8.8.8.8 -n 1 >nul
+
+IF %ERRORLEVEL% EQU 0 (
+    echo Conexao OK.
+) ELSE (
+    echo Falha na conexao.
+)
+```
+
+## FOR (loops)
+
+Loop em lista fixa
+
+```bat
+@echo off
+for %%i in (1 2 3 4 5) do (
+    echo Numero: %%i
+)
+
+```
+Loop em intervalo numérico
+
+```bat
+@echo off
+rem (inicio,passo,fim)
+for /L %%i in (1,1,10) do (
+    echo Contador: %%i
+)
+```
+
+Loop em arquivos do diretório
+
+```bat
+@echo off
+for %%f in (*.txt) do (
+    echo Arquivo: %%f
+)
+```
+
+Loop recursivo em subpastas
+
+```bat
+@echo off
+for /R %%f in (*.log) do (
+    echo Log encontrado: %%f
+)
+```
+
+Loop em linhas de um arquivo
+
+```bat
+@echo off
+for /F "delims=" %%L in (lista.txt) do (
+    echo Linha: %%L
+)
+```
+Loop sobre saída de comando
+
+```bat
+@echo off
+for /F "tokens=1,2" %%A in ('ipconfig ^| findstr /R "IPv4"') do (
+    echo %%A %%B
+)
+```
+
+Logs em batch
+
+Redirecionamento básico
+- > — Sobrescreve arquivo de log.
+
+- >> — Acrescenta ao final.
+
+- 2> — Redireciona erro.
+
+- 2>&1 — Junta saída normal e erros no mesmo arquivo.
+
+Exemplo simples:
+
+```bat
+@echo off
+comando.exe > log.txt 2>&1
+```
+
+Log com timestamp
+
+```bat
+@echo off
+set "LOGFILE=C:\logs\script.log"
+
+echo %DATE% %TIME% - Script iniciado.>>"%LOGFILE%"
+echo Fazendo alguma tarefa...>>"%LOGFILE%"
+echo %DATE% %TIME% - Script finalizado.>>"%LOGFILE%"
+```
+
+Função de log reutilizável
+
+```bat
+@echo off
+setlocal
+set "LOGFILE=C:\logs\backup.log"
+
+call :LOG "Inicio do script"
+
+rem ... comandos aqui ...
+
+call :LOG "Fim do script"
+goto :EOF
+
+:LOG
+echo %DATE% %TIME% - %~1>>"%LOGFILE%"
+goto :EOF
+```
+
+## Exemplo de script de backup simples
+
+Backup de uma pasta de documentos para outro disco, com log.
+
+```bat
+@echo off
+setlocal
+
+set "SOURCE=C:\Users\Usuario\Documents"
+set "DEST=D:\Backups\Documents"
+set "LOG=D:\Backups\backup_log.txt"
+
+echo ==================================================>>"%LOG%"
+echo %DATE% %TIME% - Inicio do backup.>>"%LOG%"
+
+if not exist "%SOURCE%" (
+    echo %DATE% %TIME% - ERRO: origem nao existe: %SOURCE%>>"%LOG%"
+    goto :FIM
+)
+
+if not exist "%DEST%" (
+    mkdir "%DEST%"
+)
+
+echo Iniciando robocopy...
+robocopy "%SOURCE%" "%DEST%" /MIR /R:1 /W:5 >>"%LOG%" 2>&1
+
+echo %DATE% %TIME% - Backup finalizado.>>"%LOG%"
+
+:FIM
+echo Backup concluido. Veja o log em "%LOG%".
+pause
+endlocal
+```
+
+## Telnet
+
+Usado para acesso remoto a serviços que escutam na porta Telnet (padrão 23). Considerado inseguro para conexões pela internet, pois transmite dados em texto claro. Usar apenas em redes confiáveis ou para testes locais.
+
+- É necessário habilitar Telnet Client no cliente e Telnet Server no servidor (ou outro serviço compatível).
+
+Conexão básica:
+
+```bat
+telnet IP porta
+```
+
+Depois, autenticar com usuário e senha conforme o serviço remoto.
 
 ---
