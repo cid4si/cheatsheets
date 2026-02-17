@@ -107,6 +107,7 @@
 - `goto label` — Redireciona execução para o marcador.  
 
 Exemplo simples:
+
 ```bat
 @echo off
 echo Inicio
@@ -129,7 +130,6 @@ goto menu
 echo Fim do script.
 pause 
 ```
-
 
 ### CHOICE (menus)
 
@@ -160,8 +160,8 @@ echo Saindo...
 :fim
 pause
 
-``
-`## IF / ELSE (condicionais)
+```
+## IF / ELSE (condicionais)
 
 Sintaxe básica
 
@@ -169,9 +169,9 @@ Sintaxe básica
 IF [NOT] ERRORLEVEL numero comando
 IF [NOT] string1==string2 comando
 IF [NOT] EXIST arquivo comando
-``
+```
 
-`## Extensões com operadores
+## Extensões com operadores
 
 ```bat
 IF [/I] string1 op string2 comando
