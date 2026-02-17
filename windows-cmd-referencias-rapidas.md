@@ -1,9 +1,5 @@
 # Comandos CMD para consulta rápida
 
-Alguns comandos essenciais do Prompt de Comando do Windows, incluindo atalhos, rede, disco, processos e exemplos práticos de scripts em batch (loops, IF/ELSE, menus, logs e backup automatizado)
-
----
-
 ## Básico
 - `command1 | command2` — Encadeia a saída de um comando na entrada de outro.  
 - `comando /?` — Mostra ajuda sobre o comando.  
