@@ -1,11 +1,11 @@
-# 📑 Índice Alfabético de Cmdlets do Active Directory PowerShell
+# Índice Alfabético de Cmdlets do Active Directory PowerShell
 #### *Organizado por substantivo após o verbo do cmdlet*
 
 
 
 ---
 
-## 🔤 Índice por Categorias
+## Índice por Categorias
 
 - [A](#a) - Account, AccessRule, AccountAuthorizationGroup, AuthenticationPolicy
 - [C](#c) - Computer, Clone, Contact, Context
@@ -25,7 +25,7 @@
 
 ## A
 
-### 🔑 Account
+### Account
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -39,7 +39,7 @@
 | `Set-ADAccountPassword` | Altera a senha de uma conta do AD |
 | `Unlock-ADAccount` | Desbloqueia uma conta do Active Directory |
 
-### 🛡️ AccessRule e AuthorizationRule
+### AccessRule e AuthorizationRule
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -55,7 +55,7 @@
 | `Set-ADCentralAccessPolicy` | Modifica uma política de acesso central |
 | `Set-ADCentralAccessRule` | Modifica uma regra de acesso central |
 
-### 🔐 AuthenticationPolicy
+### AuthenticationPolicy
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -72,7 +72,7 @@
 
 ## C
 
-### 💻 Computer
+### Computer
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -83,7 +83,7 @@
 | `Remove-ADComputerServiceAccount` | Remove contas de serviço gerenciadas de um computador |
 | `Set-ADComputer` | Modifica um objeto de computador existente |
 
-### 👤 Contact
+### Contact
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -92,7 +92,7 @@
 | `Remove-ADContact` | Remove um contato do AD |
 | `Set-ADContact` | Modifica um contato existente no AD |
 
-### 🔄 Clone
+### Clone
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -100,7 +100,7 @@
 | `New-ADDCCloneConfigFile` | Cria um arquivo de configuração para clonagem de DC |
 | `Set-ADDCCloningConfigFile` | Modifica um arquivo de configuração para clonagem de DC |
 
-### 📋 Context
+### Context
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -115,7 +115,7 @@
 
 ## D
 
-### 🌐 Domain
+### Domain
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -124,7 +124,7 @@
 | `Set-ADDomain` | Modifica um domínio existente |
 | `Set-ADDomainMode` | Define o modo funcional do domínio |
 
-### 🖥️ DomainController
+### DomainController
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -134,7 +134,7 @@
 | `Add-ADDomainControllerPasswordReplicationPolicy` | Adiciona princípios à política de replicação de senha |
 | `Remove-ADDomainControllerPasswordReplicationPolicy` | Remove princípios da política de replicação de senha |
 
-### 🔑 DefaultDomainPasswordPolicy
+### DefaultDomainPasswordPolicy
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -145,7 +145,7 @@
 
 ## F
 
-### 🌳 Forest
+### Forest
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -153,7 +153,7 @@
 | `Set-ADForest` | Modifica uma floresta do AD |
 | `Set-ADForestMode` | Define o modo funcional da floresta |
 
-### 🔐 FineGrainedPasswordPolicy
+### FineGrainedPasswordPolicy
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -169,7 +169,7 @@
 
 ## G
 
-### 👥 Group
+### Group
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -185,7 +185,7 @@
 
 ## L
 
-### 🔍 LDAPFilterEntry
+### LDAPFilterEntry
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -200,7 +200,7 @@
 | `Set-ADClaimTransformPolicy` | Modifica uma política de transformação de declaração existente |
 | `Set-ADClaimType` | Modifica um tipo de declaração existente |
 
-### ⏰ LogonHour
+### LogonHour
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -210,7 +210,7 @@
 
 ## O
 
-### 📁 Object
+### Object
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -222,7 +222,7 @@
 | `Set-ADObject` | Modifica um objeto existente no AD |
 | `Sync-ADObject` | Sincroniza um objeto entre controladores de domínio |
 
-### 📂 OrganizationalUnit
+### OrganizationalUnit
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -231,7 +231,7 @@
 | `Remove-ADOrganizationalUnit` | Remove uma unidade organizacional |
 | `Set-ADOrganizationalUnit` | Modifica uma unidade organizacional existente |
 
-### 🔧 OptionalFeature
+### OptionalFeature
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -243,7 +243,7 @@
 
 ## P
 
-### 🔑 PasswordReplicationPolicy
+### PasswordReplicationPolicy
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -252,7 +252,7 @@
 | `Get-ADDomainControllerPasswordReplicationPolicyUsage` | Obtém os usuários, grupos e computadores afetados pela política de replicação de senhas |
 | `Remove-ADDomainControllerPasswordReplicationPolicy` | Remove usuários, grupos ou computadores da política de replicação de senhas |
 
-### 👥 PrincipalGroupMembership
+### PrincipalGroupMembership
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -262,7 +262,7 @@
 
 ## Q
 
-### 📊 QuotaEntry
+### QuotaEntry
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -275,7 +275,7 @@
 
 ## R
 
-### 🏷️ ResourceProperty
+### ResourceProperty
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -284,7 +284,7 @@
 | `Remove-ADResourceProperty` | Remove uma propriedade de recurso |
 | `Set-ADResourceProperty` | Modifica uma propriedade de recurso existente |
 
-### 📋 ResourcePropertyList
+### ResourcePropertyList
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -294,7 +294,7 @@
 | `Remove-ADResourcePropertyListMember` | Remove um membro de uma lista de propriedades de recurso |
 | `Set-ADResourcePropertyList` | Modifica uma lista de propriedades de recurso existente |
 
-### 🔄 Replication
+### Replication
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -323,7 +323,7 @@
 | `Set-ADReplicationSubnet` | Modifica uma sub-rede de replicação existente |
 | `Sync-ADObject` | Sincroniza um objeto entre controladores de domínio |
 
-### 🌳 RootDSE
+### RootDSE
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -333,7 +333,7 @@
 
 ## S
 
-### 👨‍💼 ServiceAccount
+### ServiceAccount
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -352,7 +352,7 @@
 
 ## T
 
-### 🤝 Trust
+### Trust
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -364,7 +364,7 @@
 
 ## U
 
-### 👤 User
+### User
 
 | Cmdlet | Descrição |
 |--------|-----------|
@@ -377,7 +377,7 @@
 
 ---
 
-## 📝 Notas Adicionais
+## Notas Adicionais
 
 ### Comandos Relacionados (Não-PowerShell)
 
@@ -398,7 +398,7 @@
 
 ---
 
-## 🔍 Dicas de Uso
+## Dicas de Uso
 
 1. **Filtrar resultados**: Use o parâmetro `-Filter` com operadores de comparação:
    ```powershell
