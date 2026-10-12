@@ -4,8 +4,13 @@
 
 ## Índice
 
-- [Git](./Git/)
-  - [Índice de comandos Git](./Git/indice-comandos-git.md#indice-de-comandos-git)
+- Controle de Versão
+  - [Git](./Controle_de_Versao/Git/)
+    - [Índice de comandos Git](./Controle_de_Versao/Git/indice-comandos-git.md#indice-de-comandos-git)
+    - [Consulta rápida e Troubleshooting](./Controle_de_Versao/Git/consulta-rapida.md#consulta-rapida-e-troubleshooting)
+
+- Editores de Texto
+  - [Índice de comandos Nano](./Editores_de_Texto/indice-comandos-nano.md#indice-de-comandos-nano)
 
 - Sistemas
   - [Linux](./Sistemas/Linux/)

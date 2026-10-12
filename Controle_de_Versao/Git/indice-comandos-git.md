@@ -292,31 +292,6 @@ git worktree move <caminho_antigo> <novo>  # Move uma working tree
 
 ---
 
-## Referência Rápida
-
-| Comando | Descrição |
-|---|---|
-| `git init` | Inicializa repositório |
-| `git clone` | Clona repositório |
-| `git status` | Estado dos arquivos |
-| `git add` | Adiciona ao stage |
-| `git commit` | Registra commit |
-| `git push` | Envia para remoto |
-| `git pull` | Baixa do remoto |
-| `git branch` | Gerencia branches |
-| `git checkout` | Navega entre branches |
-| `git merge` | Une branches |
-| `git log` | Histórico de commits |
-| `git diff` | Exibe diferenças |
-| `git stash` | Salva mudanças temporárias |
-| `git remote` | Gerencia remotos |
-| `git rebase` | Reaplicar commits |
-| `git cherry-pick` | Aplica commit específico |
-| `git tag` | Marca commits |
-| `git reflog` | Histórico de HEAD |
-| `git worktree` | Múltiplas working trees |
-| `git submodule` | Gerencia submódulos |
-
 ## Links Úteis
 
 - [Documentação Oficial do Git](https://git-scm.com/doc)
