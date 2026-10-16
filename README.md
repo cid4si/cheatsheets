@@ -1,6 +1,6 @@
 # Anotações para consultas
 
-<p>Alguns comandos essenciais para sistemas Linux, macOS e Windows incluindo atalhos e exemplos práticos de scripts.</p>
+<p>Uma coleção de atalhos, comandos e exemplos práticos de scripts para minhas principais ferramentas e sistemas.</p>
 
 ## Índice
 
@@ -11,6 +11,10 @@
 
 - Editores de Texto
   - [Índice de comandos Nano](./Editores_de_Texto/indice-comandos-nano.md#indice-de-comandos-nano)
+
+- Editores de Vídeo
+  - [FFmpeg](./Editores_de_Video/ffmpg/)
+    - [Imagem com comandos](./Editores_de_Video/ffmpg/imagem-com-comandos.md#imagem-com-comandos)
 
 - Sistemas
   - [Linux](./Sistemas/Linux/)
