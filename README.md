@@ -9,6 +9,10 @@
     - [Índice de comandos Git](./Controle_de_Versao/Git/indice-comandos-git.md#indice-de-comandos-git)
     - [Consulta rápida e Troubleshooting](./Controle_de_Versao/Git/consulta-rapida.md#consulta-rapida-e-troubleshooting)
 
+- DBA
+  - [SQL](./DBA/SQL/)
+    - [Consulta rápida](./DBA/SQL/consulta-rapida.md#consulta-rapida)
+
 - Editores de Texto
   - [Índice de comandos Nano](./Editores_de_Texto/indice-comandos-nano.md#indice-de-comandos-nano)
 
