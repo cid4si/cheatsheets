@@ -25,6 +25,8 @@
 | `git config --get <chave>` | Consulta uma config específica |
 | `git config --unset <chave>` | Remove uma config (local) |
 | `git config --global --unset <chave>` | Remove uma config (global) |
+| `git config --global url."git@github.com:".insteadOf "https://github.com/"` | Configura o Git para converter URLs HTTPS do GitHub em SSH |
+| `git config --global --get-regexp '^url\..*\.insteadof$'` | Confirma se a conversão automática de URLs foi salva |
 | `ssh -T git@github.com` | Testa autenticação SSH com GitHub |
 | `ssh-keygen -t ed25519 -C "email"` | Gera nova chave SSH |
 | `cat ~/.ssh/id_ed25519.pub` | Mostra a chave pública |
